@@ -168,6 +168,21 @@ tomli = ">=1.0.0"
 testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.7.2)", "requests", "xmlschema"]
 
 [[package]]
+name = "pytest-django"
+version = "4.5.2"
+description = "A Django plugin for pytest."
+category = "dev"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+pytest = ">=5.4.0"
+
+[package.extras]
+docs = ["sphinx", "sphinx-rtd-theme"]
+testing = ["django", "django-configurations (>=2.0)"]
+
+[[package]]
 name = "sqlparse"
 version = "0.4.3"
 description = "A non-validating SQL parser."
@@ -194,7 +209,7 @@ python-versions = ">=2"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "e659fd1b03adff1519df3846cea6be03991f14f3037c2f499d7577869037c9c3"
+content-hash = "b48ec926a698c9d05ecdd0cde82af78f6f522614c25f9adc366a6a75e6707b07"
 
 [metadata.files]
 asgiref = []
@@ -218,6 +233,7 @@ pycodestyle = []
 pyflakes = []
 pyparsing = []
 pytest = []
+pytest-django = []
 sqlparse = []
 tomli = [
     {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
