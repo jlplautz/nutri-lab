@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('pyprg.authentication.urls')),
+    path('', include('pyprg.plataforma.urls')),
 ]
